@@ -30,4 +30,8 @@ async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
 
+@bot.command()
+async def help(ctx):
+    await ctx.send("Menu help ini akan bantu kamu pakai bot.")
+
 bot.run("")
